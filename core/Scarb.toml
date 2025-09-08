@@ -1,0 +1,16 @@
+[package]
+cairo-version = "2.12"
+edition = "2024_07"
+description = "The Dojo Core library for autonomous worlds."
+name = "dojo"
+version = "1.7.0-alpha.2"
+experimental-features = ["negative_impls"]
+
+[dependencies]
+starknet = "2.12"
+# dojo_macros = { path = "../macros" }
+
+[lib]
+
+[[target.starknet-contract]]
+sierra = true
